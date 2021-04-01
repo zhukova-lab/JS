@@ -1,0 +1,154 @@
+<meta charset="utf-8">
+<script>
+  //Первое задание
+
+  var a = 1;
+  var b = 1;
+  var c;
+  var d;
+  c = ++a; alert(c);           // 2   префиксный инкремента, переменная сначала увеличется a на 1, потом присвоется к переменной c
+  d = b++; alert(d);           // 1   постфиксный инкремента, значемние переменной b сначала присвоится переменной d, а потом увеличится на 1
+  c = (2 + ++a); alert(c);      // 5  префиксный инкремента и переменная a была уже увеличена на 1 и равна 2 
+  d = (2 + b++); alert(d);      // 4  постфиксный инкремента и переменная b была уже увеличена на 1 и равна 2 
+  alert(a);                    // 3   префиксный инкремента увеличил значени переменной еще на 1, поэтому она равна 3
+  alert(b);                    // 3   постфиксный инкремента увеличивал переменную на 1 после занесения её значения в переменную d, поэтому в итоге она равна 3
+
+  //Второе задание
+  var a = 2;
+  var x = 1 + (a *= 2); // переменная x будет равна 5
+
+  //Третье задание
+
+  var a = 10;
+  var b = 12;
+  if (a >= 0 && b >= 0) {
+    alert(a - b)
+  } else if (a < 0 && b < 0) {
+    alert(a * b)
+  } else if ((a >= 0 && b < 0) || (a < 0 && b >= 0)) {
+    alert(a + b)
+  }
+
+  //Четвертое задание
+  var a = parseInt(prompt('Введите число от 0 до 15:'));
+  if (isNaN(a)) {
+    alert('Вы ввели не число');
+  } else {
+    switch (a) {
+      case 1:
+        alert('Число 1');
+      //break;
+      case 2:
+        alert('Число 2');
+      //break;
+      case 3:
+        alert('Число 3');
+      //break;
+      case 4:
+        alert('Число 4');
+      //break;
+      case 5:
+        alert('Число 5');
+      //break;
+      case 6:
+        alert('Число 6');
+      //break;
+      case 7:
+        alert('Число 7');
+      //break;
+      case 8:
+        alert('Число 8');
+      //break;
+      case 9:
+        alert('Число 9');
+      //break;
+      case 10:
+        alert('Число 10');
+      //break;
+      case 11:
+        alert('Число 11');
+      //break;
+      case 12:
+        alert('Число 12');
+      //break;
+      case 13:
+        alert('Число 13');
+      //break;
+      case 14:
+        alert('Число 14');
+      //break;
+      case 15:
+        alert('Число 15');
+        break;
+    }
+  }
+  // Пятое задание
+  function plus(a, b) {
+    return (a + b);
+  }
+  var a = parseInt(prompt('Слагаемое:'))
+  var b = parseInt(prompt('Слагаемое:'))
+  alert('Сумма:' + plus(a, b))
+
+  function minus(a, b) {
+    return (a - b);
+  }
+  var c = parseInt(prompt('Уменьшаемое:'))
+  var d = parseInt(prompt('Вычитаемое:'))
+  alert('Разность:' + minus(c, d))
+
+  function div(a, b) {
+    return (a / b);
+  }
+  var i = parseInt(prompt('Делимое:'))
+  var f = parseInt(prompt('Делитель:'))
+  alert('Частное:' + div(i, f))
+
+  function multi(a, b) {
+    return (a * b);
+  }
+  var k = parseInt(prompt('Множимое:'))
+  var l = parseInt(prompt('Множитель:'))
+  alert('Произведение:' + multi(k, l))
+
+  // Шестое задание
+  var arg1 = parseInt(prompt('Первый аргумент: '));
+  var arg2 = parseInt(prompt('Второй аргумент: '));
+  var operation = prompt("Выберите операцию: '+' , '-' , '/' , '*' ");
+
+  function mathOperation(arg1, arg2, operation) {
+    switch (operation) {
+      case "+":
+        return arg1 + arg2;
+        break;
+
+      case "-":
+        return arg1 - arg2;
+        break;
+
+      case "*":
+        return arg1 * arg2;
+        break;
+
+      case "/":
+        return arg1 / arg2;
+        break;
+    }
+  }
+  alert(mathOperation(arg1, arg2, operation));
+
+  // Седьмое задание
+  console.log(null > 0);  //  false    Операторы сравнения преобразуют null в число (0). В данном случае 0 не больше 0, поэтому false
+  console.log(null == 0); //  false    Для равенства null ни к чему не приводистя, истинным будет null==null или null==undefined.
+  console.log(null >= 0); //  true 
+
+  // Восьмое задание
+  function power(val, pow) {
+    return val ** pow
+  }
+  var val = parseInt(prompt('Введите число: '));
+  var pow = parseInt(prompt('Введите нужную степень числа: '));
+  alert(power(val, pow))
+
+
+</script>
