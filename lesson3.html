@@ -1,0 +1,40 @@
+<meta charset="utf-8">
+<script>
+  //Первое задание
+  var n = 100;
+
+  for (var i = 2; i <= n; i++) {
+    if (!number(i)) continue;
+    console.log(i);
+  }
+  function number(n) {
+    for (var j = 2; j < Math.sqrt(n); j++) {
+      if (n % j == 0) return false;
+    }
+    return true;
+  }
+
+  //Второе задание
+
+  function countBasketPrice(summ, basket) {
+    for (var i = 0; i <= basket.length - 1; i++) {
+      summ += basket[i]
+    }
+    return summ
+  }
+  console.log(countBasketPrice(0, [500, 5000, 3500, 4785, 1500]))
+
+  // Четвертое задание
+ for (var i = 0; i < 10; console.log(i++)) { }
+
+
+  // Пятое задание 
+  var a = [];
+  var b = 'x'
+  for (i = 0; i < 20; i++) { 
+  a.push('x')
+  console.log(a.join(''));
+}
+  
+  
+</script>
