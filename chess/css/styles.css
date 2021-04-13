@@ -1,0 +1,307 @@
+.board {
+  width: 560px;
+  height: 560px;
+  margin: 50px auto;
+  border: black solid 20px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.block {
+  width: 70px;
+  height: 70px;
+}
+.brown {
+  background: brown;
+}
+.beige {
+  background: beige;
+}
+.block:nth-of-type(1)::before {
+  display: block;
+  position: absolute;
+  color: beige;
+  font-size: 20px;
+  content: '8';
+  top: 25px;
+  left: -15px;
+}
+.block:nth-of-type(9)::before {
+  display: block;
+  position: absolute;
+  color: beige;
+  font-size: 20px;
+  content: '7';
+  top: 92px;
+  left: -15px;
+}
+.block:nth-of-type(17)::before {
+  display: block;
+  position: absolute;
+  color: beige;
+  font-size: 20px;
+  content: '6';
+  top: 162px;
+  left: -15px;
+}
+.block:nth-of-type(25)::before {
+  display: block;
+  position: absolute;
+  color: beige;
+  font-size: 20px;
+  content: '5';
+  top: 232px;
+  left: -15px;
+}
+.block:nth-of-type(33)::before {
+  display: block;
+  position: absolute;
+  color: beige;
+  font-size: 20px;
+  content: '4';
+  top: 306px;
+  left: -15px;
+}
+.block:nth-of-type(41)::before {
+  display: block;
+  position: absolute;
+  color: beige;
+  font-size: 20px;
+  content: '3';
+  bottom: 162px;
+  left: -15px;
+}
+.block:nth-of-type(49)::before {
+  display: block;
+  position: absolute;
+  color: beige;
+  font-size: 20px;
+  content: '2';
+  bottom: 92px;
+  left: -15px;
+}
+.block:nth-of-type(57)::before {
+  display: block;
+  position: absolute;
+  color: beige;
+  font-size: 20px;
+  content: '1';
+  bottom: 22px;
+  left: -15px;
+}
+.block:nth-of-type(8)::after {
+  display: block;
+  position: absolute;
+  color: beige;
+  font-size: 20px;
+  content: '8';
+  top: 25px;
+  right: -15px;
+}
+.block:nth-of-type(16)::after {
+  display: block;
+  position: absolute;
+  color: beige;
+  font-size: 20px;
+  content: '7';
+  top: 92px;
+  right: -15px;
+}
+.block:nth-of-type(24)::after {
+  display: block;
+  position: absolute;
+  color: beige;
+  font-size: 20px;
+  content: '6';
+  top: 162px;
+  right: -15px;
+}
+.block:nth-of-type(32)::after {
+  display: block;
+  position: absolute;
+  color: beige;
+  font-size: 20px;
+  content: '5';
+  top: 232px;
+  right: -15px;
+}
+.block:nth-of-type(40)::after {
+  display: block;
+  position: absolute;
+  color: beige;
+  font-size: 20px;
+  content: '4';
+  top: 306px;
+  right: -15px;
+}
+.block:nth-of-type(48)::after {
+  display: block;
+  position: absolute;
+  color: beige;
+  font-size: 20px;
+  content: '3';
+  bottom: 162px;
+  right: -15px;
+}
+.block:nth-of-type(56)::after {
+  display: block;
+  position: absolute;
+  color: beige;
+  font-size: 20px;
+  content: '2';
+  bottom: 92px;
+  right: -15px;
+}
+.block:nth-of-type(64)::after {
+  display: block;
+  position: absolute;
+  color: beige;
+  font-size: 20px;
+  content: '1';
+  bottom: 22px;
+  right: -15px;
+}
+.block:nth-of-type(1)::after {
+  display: block;
+  position: absolute;
+  color: beige;
+  font-size: 20px;
+  content: 'A';
+  top: -20px;
+  left: 25px;
+}
+.block:nth-of-type(2)::after {
+  display: block;
+  position: absolute;
+  color: beige;
+  font-size: 20px;
+  content: 'B';
+  top: -20px;
+  left: 98px;
+}
+.block:nth-of-type(3)::after {
+  display: block;
+  position: absolute;
+  color: beige;
+  font-size: 20px;
+  content: 'C';
+  top: -20px;
+  left: 168px;
+}
+.block:nth-of-type(4)::after {
+  display: block;
+  position: absolute;
+  color: beige;
+  font-size: 20px;
+  content: 'D';
+  top: -20px;
+  left: 238px;
+}
+.block:nth-of-type(5)::after {
+  display: block;
+  position: absolute;
+  color: beige;
+  font-size: 20px;
+  content: 'E';
+  top: -20px;
+  right: 240px;
+}
+.block:nth-of-type(6)::after {
+  display: block;
+  position: absolute;
+  color: beige;
+  font-size: 20px;
+  content: 'F';
+  top: -20px;
+  right: 168px;
+}
+.block:nth-of-type(7)::after {
+  display: block;
+  position: absolute;
+  color: beige;
+  font-size: 20px;
+  content: 'G';
+  top: -20px;
+  right: 100px;
+}
+.block:nth-of-type(8)::before {
+  display: block;
+  position: absolute;
+  color: beige;
+  font-size: 20px;
+  content: 'H';
+  top: -20px;
+  right: 28px;
+}
+.block:nth-of-type(56)::before {
+  display: block;
+  position: absolute;
+  color: beige;
+  font-size: 20px;
+  content: 'A';
+  bottom: -22px;
+  left: 28px;
+}
+.block:nth-of-type(57)::after {
+  display: block;
+  position: absolute;
+  color: beige;
+  font-size: 20px;
+  content: 'B';
+  bottom: -22px;
+  left: 100px;
+}
+.block:nth-of-type(58)::before {
+  display: block;
+  position: absolute;
+  color: beige;
+  font-size: 20px;
+  content: 'C';
+  bottom: -22px;
+  left: 169px;
+}
+.block:nth-of-type(59)::before {
+  display: block;
+  position: absolute;
+  color: beige;
+  font-size: 20px;
+  content: 'D';
+  bottom: -22px;
+  left: 240px;
+}
+.block:nth-of-type(61)::before {
+  display: block;
+  position: absolute;
+  color: beige;
+  font-size: 20px;
+  content: 'E';
+  bottom: -22px;
+  right: 236px;
+}
+.block:nth-of-type(62)::before {
+  display: block;
+  position: absolute;
+  color: beige;
+  font-size: 20px;
+  content: 'F';
+  bottom: -22px;
+  right: 165px;
+}
+.block:nth-of-type(63)::before {
+  display: block;
+  position: absolute;
+  color: beige;
+  font-size: 20px;
+  content: 'G';
+  bottom: -22px;
+  right: 96px;
+}
+.block:nth-of-type(64)::before {
+  display: block;
+  position: absolute;
+  color: beige;
+  font-size: 20px;
+  content: 'H';
+  bottom: -22px;
+  right: 28px;
+}
