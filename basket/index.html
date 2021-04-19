@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/f734bf8f71.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header">
+
+    <div class="container">
+      <div id="cart">
+      </div>
+      <a id="checkout" href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i><span
+          class="cart-quantity">5</span></a>
+      <button id="clear_cart">Очистить корзину</button>
+    </div>
+  </header>
+  <select name="filter">
+    <option value="all">Все товары</option>
+    <option value="vegetables">Овощи</option>
+    <option value="fruit">Фрукты</option>
+    <option value="berrys">Ягоды</option>
+  </select>
+  <div class="carousel container">
+    <svg class="slider__prew" width="30" height="33" viewBox="0 0 40 73" fill="black">
+      <path d="M38.03 72.98L0 36.5L38.03 0.0200195L40 2.02002L4.07 36.5L40 70.98L38.03 72.98Z" />
+    </svg>
+
+    <ul class="catalog container">
+    </ul>
+
+    <svg class="slider__next" width="30" height="33" viewBox="0 0 40 73" fill="black">
+      <path d="M1.97 72.96L40 36.48L1.97 0L0 2L35.93 36.48L0 70.96L1.97 72.96Z" />
+    </svg>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
